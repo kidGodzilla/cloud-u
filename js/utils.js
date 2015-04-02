@@ -4,7 +4,7 @@
     /**
      * Generate a (globally) Unique ID
      */
-    recommendations.registerGlobal('generateUID', function (separator) {
+    CloudU.registerGlobal('generateUID', function (separator) {
         var delimiter = separator || "-";
 
         function s4() {

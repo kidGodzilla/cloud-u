@@ -1,6 +1,6 @@
 "use strict";
 
 (function () {
-    var r = new Core();
-    window.recommendations = $.extend({}, _, r);
+    var CloudU = new Core();
+    window.CloudU = $.extend({}, _, CloudU);
 })();
