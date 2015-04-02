@@ -28,9 +28,14 @@
     loadStylesheet("vendor/vex-theme-default.css");
     loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger.css");
     loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger-theme-air.css");
-    loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/yeti/bootstrap.min.css");
+    // loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/yeti/bootstrap.min.css");
+
+    loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css");
+
+    loadStylesheet("bootstrap.min.css");
     loadStylesheet("vendor/medium-editor.min.css");
     loadStylesheet("vendor/medium-editor.bootstrap.min.css");
+    loadStylesheet("vendor/medium-editor-insert-plugin.min.css");
 
 
     // JS Dependencies
@@ -40,6 +45,13 @@
     loadScript("vendor/vex.combined.min.js");
     loadScript("http://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/js/messenger.min.js");
     loadScript("vendor/medium-editor.min.js");
+
+    loadScript("https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.runtime.min.js");
+    loadScript("vendor/jquery-sortable-min.js");
+    loadScript("vendor/jquery.ui.widget.js");
+    loadScript("vendor/jquery.fileupload.js");
+    loadScript("vendor/jquery.iframe-transport.js");
+    loadScript("vendor/medium-editor-insert-plugin.min.js");
 
     document.write("<script>vex.defaultOptions.className = 'vex-theme-default'; Messenger.options = { extraClasses: 'messenger-fixed messenger-on-top messenger-on-right', theme: 'air'};</script>");
 

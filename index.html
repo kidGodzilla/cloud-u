@@ -5,21 +5,66 @@
     <title>Cloud U: Login</title>
     <script src="js/loader.js"></script>
     <style>
-
+        .navbar-inverse .dropdown-menu {
+            background: #075891;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="header clearfix">
-        <div id="navigation-component">
-            <nav>
-                <ul class="nav nav-pills pull-right">
+    <!--<div class="header clearfix">-->
+        <!--<div id="navigation-component">-->
+            <!--<nav>-->
+                <!--<ul class="nav nav-pills pull-right">-->
+                    <!--<li role="presentation" class="active"><a href="#" onclick="CloudU.login()">Login</a></li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+        <!--</div>-->
+        <!--<h3 class="text-muted">-->
+            <!--<img src="https://static.bittitan.com/Logos/2014/BitTitan_200_white.png" alt="" style="height: 25px;margin-top:-3px;">-->
+        <!--</h3>-->
+    <!--</div>-->
+
+    <br/>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://static.bittitan.com/Logos/2014/BitTitan_200_white.png" alt="" style="height: 25px;margin-top:-3px;">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li role="presentation" class="active"><a href="#" onclick="CloudU.login()">Login</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <h3 class="text-muted">Cloud U</h3>
-    </div>
+    </nav>
 
     <div class="row">
         <div class="col-xs-12">
@@ -38,20 +83,20 @@
     <div class="row marketing">
         <div class="col-xs-12 col-sm-6">
             <h4>Client-Side JavaScript</h4>
-            <p>Everything is being computed in client-side JavaScript.</p>
+            <p>Everything is being done in client-side JavaScript.</p>
             <p>&nbsp;</p>
 
-            <h4>Facebook Connect</h4>
-            <p>Uses Facebook connect to load a list of movies you've liked on Facebook.</p>
+            <h4>BitTitan SSO</h4>
+            <p>Uses BitTitan SSO to authenticate securely, generating JWT tokens which can authenticate client-side access to data in Firebase.</p>
             <p>&nbsp;</p>
         </div>
 
         <div class="col-xs-12 col-sm-6">
             <h4>Firebase</h4>
-            <p>Login is secured by firebase as well as data persistence.</p>
+            <p>Login is secured by firebase, as well as data persistence.</p>
             <p>&nbsp;</p>
 
-            <h4>Now with bootstrap</h4>
+            <h4>Internal BitTitan bootstrap.css</h4>
             <p>Slightly easier on the eyes, now with 100% more bootstrap.css.</p>
             <p>&nbsp;</p>
         </div>
@@ -60,9 +105,11 @@
 
     <footer class="footer">
         <br/><br/>
-        <p>© James Futhey 2015. All Rights Reserved.</p>
+        <p>© 2015 BitTitan, Inc. All Rights Reserved.</p>
     </footer>
 
 </div> <!-- /container -->
+
+<script src="https://www.bittitan.com/internal-bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
