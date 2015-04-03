@@ -166,3 +166,10 @@ var Core = (function () {
 if (typeof define === 'function' && define['amd'])      { define(function() { return Core; }); }
 if (typeof module !== 'undefined' && module['exports']) { module['exports'] = Core; }
 if (typeof window !== 'undefined')                      { window['Core'] = Core; }
+
+var CloudU = new Core();
+CloudU.registerGlobal('sayHello', function () {
+    console.log('hello');
+});
+
+CloudU.sayHello();

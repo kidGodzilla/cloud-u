@@ -20,7 +20,7 @@
             // Modal
             vex.dialog.open({
                 message: 'Enter your username and password:',
-                input: "<input name=\"email\" type=\"text\" placeholder=\"Email\" required />\n<input name=\"password\" type=\"password\" placeholder=\"Password\" required /><br>Don't have an account? <a href='#' onclick='$(\".vex-dialog-button-secondary\").click();CloudU.createAccount()'>Create an account now</a>",
+                input: "<input name=\"email\" type=\"text\" placeholder=\"Email\" required />\n<input name=\"password\" type=\"password\" placeholder=\"Password\" required /><br>Don't have an account? <a href='https://www.bittitan.com/account/register'>Create an account now</a>",
                 buttons: [
                     $.extend({}, vex.dialog.buttons.YES, {
                         text: 'Login'

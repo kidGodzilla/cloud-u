@@ -1,9 +1,10 @@
 "use strict";
 
 (function () {
-    $(document).ready(function () {
 
-        CloudU.HTMLIncludes();
+    CloudU.HTMLIncludes();
+
+    $(document).ready(function () {
 
         var elements = document.querySelectorAll('.editable'),
             editor = new MediumEditor(elements, {

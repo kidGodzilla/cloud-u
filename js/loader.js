@@ -26,8 +26,8 @@
     // Stylesheets
     loadStylesheet("vendor/vex.css");
     loadStylesheet("vendor/vex-theme-default.css");
-    loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger.css");
-    loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger-theme-air.css");
+    loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger.css");
+    loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger-theme-air.css");
     // loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/yeti/bootstrap.min.css");
 
     loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css");
@@ -39,11 +39,11 @@
 
 
     // JS Dependencies
-    loadScript("http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js");
-    loadScript("http://cdn.firebase.com/js/client/2.2.3/firebase.js");
-    loadScript("http://cdn.jsdelivr.net/lodash/3.5.0/lodash.compat.min.js");
+    loadScript("https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js");
+    loadScript("https://cdn.firebase.com/js/client/2.2.3/firebase.js");
+    loadScript("https://cdn.jsdelivr.net/lodash/3.5.0/lodash.compat.min.js");
     loadScript("vendor/vex.combined.min.js");
-    loadScript("http://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/js/messenger.min.js");
+    loadScript("https://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/js/messenger.min.js");
     loadScript("vendor/medium-editor.min.js");
 
     loadScript("https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.runtime.min.js");
