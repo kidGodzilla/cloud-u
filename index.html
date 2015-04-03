@@ -8,63 +8,25 @@
         .navbar-inverse .dropdown-menu {
             background: #075891;
         }
+        a {
+            color: #7494A9;
+        // text-decoration: underline;
+        }
+        code {
+            background: rgba(255,255,255,0.25);
+        }
+        h1, h2 {
+            border-bottom: 1px solid rgba(255,255,255,0.32);
+        }
+        div.medium-insert-buttons {
+            margin-left: -60px;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <!--<div class="header clearfix">-->
-        <!--<div id="navigation-component">-->
-            <!--<nav>-->
-                <!--<ul class="nav nav-pills pull-right">-->
-                    <!--<li role="presentation" class="active"><a href="#" onclick="CloudU.login()">Login</a></li>-->
-                <!--</ul>-->
-            <!--</nav>-->
-        <!--</div>-->
-        <!--<h3 class="text-muted">-->
-            <!--<img src="https://static.bittitan.com/Logos/2014/BitTitan_200_white.png" alt="" style="height: 25px;margin-top:-3px;">-->
-        <!--</h3>-->
-    <!--</div>-->
 
-    <br/>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="https://static.bittitan.com/Logos/2014/BitTitan_200_white.png" alt="" style="height: 25px;margin-top:-3px;">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation" class="active"><a href="#" onclick="CloudU.login()">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="html-include" data-source-url="nav.html"></div>
 
     <div class="row">
         <div class="col-xs-12">
@@ -105,7 +67,7 @@
 
     <footer class="footer">
         <br/><br/>
-        <p>© 2015 BitTitan, Inc. All Rights Reserved.</p>
+        <p class="text-center">© 2015 BitTitan, Inc. All Rights Reserved.</p>
     </footer>
 
 </div> <!-- /container -->

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CloudU: Home</title>
+    <script src="js/loader.js"></script>
+    <style>
+        .navbar-inverse .dropdown-menu {
+            background: #075891;
+        }
+        a {
+            color: #7494A9;
+        // text-decoration: underline;
+        }
+        code {
+            background: rgba(255,255,255,0.25);
+        }
+        h1, h2 {
+            border-bottom: 1px solid rgba(255,255,255,0.32);
+        }
+        div.medium-insert-buttons {
+            margin-left: -60px;
+        }
+        a.list-group-item {
+            cursor: pointer;
+        }
+        /*.well {*/
+        /*background: #859BB5;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="html-include" data-source-url="nav.html"></div>
+
+    <div class="row">
+        <div class="html-include hidden-xs hidden-sm col-md-3" data-source-url="directory-nav.html"></div>
+        <div class="col-xs-12 col-md-9">
+            <div id="body" class="well">
+                <span class="pull-right">
+                    <a href="create-article.html" class="btn btn-success"><i class="fa fa-plus"></i> &nbsp;New Article</a>
+                </span>
+                <h1 class="">Migration Guides</h1>
+                <br/>
+
+                <div class="well">
+                    <div class="list-group">
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">2</span>
+                            Dapibus ac facilisis in
+                        </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">1</span>
+                            Morbi leo risus
+                        </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">2</span>
+                            Dapibus ac facilisis in
+                        </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">1</span>
+                            Morbi leo risus
+                        </a><a class="list-group-item" href="sample-article.html">
+                        <span class="badge">14</span>
+                        Cras justo odio
+                    </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">2</span>
+                            Dapibus ac facilisis in
+                        </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">1</span>
+                            Morbi leo risus
+                        </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">2</span>
+                            Dapibus ac facilisis in
+                        </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">1</span>
+                            Morbi leo risus
+                        </a><a class="list-group-item" href="sample-article.html">
+                        <span class="badge">14</span>
+                        Cras justo odio
+                    </a>
+                        <a class="list-group-item" href="sample-article.html">
+                            <span class="badge">2</span>
+                            Dapibus ac facilisis in
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer class="footer">
+    <br/><br/>
+    <p class="text-center">© 2015 BitTitan, Inc. All Rights Reserved.</p>
+</footer>
+
+</div> <!-- /container -->
+
+<script src="https://www.bittitan.com/internal-bootstrap/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var elements = document.querySelectorAll('.editable'),
+                editor = new MediumEditor(elements);
+
+        $(function () {
+            $('.editable').mediumInsert({
+                editor: editor
+            });
+        });
+    });
+</script>
+</body>
+</html>

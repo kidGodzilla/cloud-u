@@ -21,9 +21,6 @@
         div.medium-insert-buttons {
             margin-left: -60px;
         }
-        /*.well {*/
-            /*background: #859BB5;*/
-        /*}*/
     </style>
 </head>
 <body>
@@ -36,13 +33,13 @@
         <div class="col-xs-12 col-md-9">
             <div id="body" class="well">
                 <span class="pull-right">
-                    <a href="edit-article.html" class="btn btn-info"><i class="fa fa-pencil"></i> &nbsp;Edit</a>
+                    <a href="sample-article.html" class="btn btn-success"><i class="fa fa-hdd-o"></i> &nbsp;Save</a>
                 </span>
-                <h1 class="">Q: How do I create an administr​ator account for login?​</h1>
+                <h1 class="editable">Q: How do I create an administr​ator account for login?​</h1>
                 <br/>
 
 
-                <div class="edit-mode-border">
+                <div class="edit-mode-border editable">
 
                     <p class="solution">To create an account, perform the following from your Exchange Server 2003 machine:</p><div class="solution"><ol><li>Open the Active Directory Users and Computers snap-in.</li><li>​Navigate to the organizational unit (OU) in which you would like to create the administrative account.</li><li>Right click on the OU and select&nbsp;<em>New &gt; User</em>.</li><li>Enter "MigrationWiz" as the first name.</li><li>Enter "MigrationWiz" as the user logon name and optionally select a user principal name (UPN) domain.</li><li>Click&nbsp;<em>Next</em>.</li><li>Enter a password and confirm the password.</li><li>Uncheck&nbsp;<em>User must change password at next logon</em>.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>Next</em>&nbsp;to assign a mailbox.</li><li>Click&nbsp;<em>Finish</em>.</li><li>Right click on the MigrationWiz user in the Active Directory Users and Computers snap-in and select&nbsp;<em>Properties.</em></li><li>Click on the&nbsp;<em>Exchange Advanced</em>&nbsp;tab.</li><li>Click&nbsp;<em>Hide from Exchange address lists</em>.</li><li>Click&nbsp;<em>OK</em>.</li></ol></div><p>To grant the account access, perform the following from your Exchange Server 2003 machine:</p><ol><li>Open the Exchange System Manager snap-in.</li><li>Expand&nbsp;<em>Servers&nbsp;</em>node.
                     <p>
@@ -114,17 +111,5 @@
 </div> <!-- /container -->
 
 <script src="https://www.bittitan.com/internal-bootstrap/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-        var elements = document.querySelectorAll('.editable'),
-                editor = new MediumEditor(elements);
-
-        $(function () {
-            $('.editable').mediumInsert({
-                editor: editor
-            });
-        });
-    });
-</script>
 </body>
 </html>

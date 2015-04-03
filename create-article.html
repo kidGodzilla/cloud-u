@@ -10,7 +10,7 @@
         }
         a {
             color: #7494A9;
-            // text-decoration: underline;
+        // text-decoration: underline;
         }
         code {
             background: rgba(255,255,255,0.25);
@@ -25,128 +25,36 @@
 </head>
 <body>
 <div class="container">
-    <!--<div class="header clearfix">-->
-    <!--<div id="navigation-component">-->
-    <!--<nav>-->
-    <!--<ul class="nav nav-pills pull-right">-->
-    <!--<li role="presentation" class="active"><a href="cloudu.html">Home</a></li>-->
-    <!--<li role="presentation"><a href="#">Create Article</a></li>-->
-    <!--</ul>-->
-    <!--</nav>-->
-    <!--</div>-->
-    <!--<h3 class="text-muted">-->
-    <!--<img src="https://static.bittitan.com/Logos/2014/BitTitan_200_white.png" alt="" style="height: 25px;margin-top:-3px;">-->
-    <!--</h3>-->
-    <!--</div>-->
 
-
-    <br/>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="https://static.bittitan.com/Logos/2014/BitTitan_200_white.png" alt="" style="height: 25px;margin-top:-3px;">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="cloudu.html">Home</a></li>
-                    <li role="presentation" class="active"><a href="create-article.html">Create Article</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <div class="html-include" data-source-url="nav.html"></div>
 
     <div class="row">
-        <div class="col-xs-12">
+        <div class="html-include hidden-xs hidden-sm col-md-3" data-source-url="directory-nav.html"></div>
+        <div class="col-xs-12 col-md-9">
             <div id="body" class="well">
-                <h1 class="editable">Q: How do I create an administr​ator account for login?​</h1>
+                <span class="pull-right">
+                    <a href="sample-article.html" class="btn btn-success"><i class="fa fa-hdd-o"></i> &nbsp;Save</a>
+                </span>
+                <h1 class="editable">Q: Untitled question​</h1>
                 <br/>
 
 
                 <div class="edit-mode-border editable">
 
-                    <p class="solution">To create an account, perform the following from your Exchange Server 2003 machine:</p><div class="solution"><ol><li>Open the Active Directory Users and Computers snap-in.</li><li>​Navigate to the organizational unit (OU) in which you would like to create the administrative account.</li><li>Right click on the OU and select&nbsp;<em>New &gt; User</em>.</li><li>Enter "MigrationWiz" as the first name.</li><li>Enter "MigrationWiz" as the user logon name and optionally select a user principal name (UPN) domain.</li><li>Click&nbsp;<em>Next</em>.</li><li>Enter a password and confirm the password.</li><li>Uncheck&nbsp;<em>User must change password at next logon</em>.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>Next</em>&nbsp;to assign a mailbox.</li><li>Click&nbsp;<em>Finish</em>.</li><li>Right click on the MigrationWiz user in the Active Directory Users and Computers snap-in and select&nbsp;<em>Properties.</em></li><li>Click on the&nbsp;<em>Exchange Advanced</em>&nbsp;tab.</li><li>Click&nbsp;<em>Hide from Exchange address lists</em>.</li><li>Click&nbsp;<em>OK</em>.</li></ol></div><p>To grant the account access, perform the following from your Exchange Server 2003 machine:</p><ol><li>Open the Exchange System Manager snap-in.</li><li>Expand&nbsp;<em>Servers&nbsp;</em>node.
-                    <p>
-                        <img alt="screenshot" src="https://kb-images.s3.amazonaws.com/KB004619/Exchange%202003%20System%20Manager%20Mailbox%20Store.jpg" style="margin:5px;">&nbsp;</p></li></ol><p>Note: In some Exchange System Manager consoles you may find the servers node under Administrative Groups.</p><ol><li>Right click on the server you wish to grant administrative mailbox access to and select&nbsp;<em>Properties.</em>
-                    <p>
-                        <img alt="screenshot" src="https://kb-images.s3.amazonaws.com/KB004619/Exchange%202003%20System%20Manager%20Mailbox%20Store%20General%20Tab.jpg" style="margin:5px;">&nbsp;</p></li><li>Click on the&nbsp;<em>Security&nbsp;</em>tab
-                    <p>
-                        <img alt="screenshot" src="https://kb-images.s3.amazonaws.com/KB004619/Exchange%202003%20System%20Manager%20Mailbox%20Store%20Security%20Tab.jpg" style="margin:5px;">&nbsp;</p></li><li>Click&nbsp;<em>Add</em>.</li><li>Enter "MigrationWiz".
-                    <p>
-                        <img alt="screenshot" src="https://kb-images.s3.amazonaws.com/KB004619/Exchange%202003%20System%20Manager%20Add%20Permissions.jpg" style="margin:5px;">&nbsp;</p></li><li>Click&nbsp;<em>OK</em>.</li><li>Ensure&nbsp;<em>Allow Send As</em>&nbsp;is selected.</li><li>Ensure&nbsp;<em>Allow Receive As&nbsp;</em>is selected.
-                    <p>
-                        <img alt="screenshot" src="https://kb-images.s3.amazonaws.com/KB004619/Exchange%202003%20System%20Manager%20Mailbox%20Store%20Permissions.jpg" style="margin:5px;">&nbsp;</p></li><li>Click&nbsp;<em>OK</em>.</li><li>Repeat from step 3 until permissions have been set on each mailbox server (if you have more than one).​</li></ol>
-                    <p></p><br/>
-                    <h2>Exchange 2007:<br></h2>
-                    <aside class="“aside-block”">NOTE: If your hosted Exchange provider does not provide administrative credentials or rather the admin account does not have sufficient permissions to login to user mailboxes,&nbsp;<a href="http://www.bittitan.com/kb/KB004363">click here</a>.</aside>
-                    <p>To create an account, perform the following from your Exchange Server 2007 machine:</p><ol><li>Open&nbsp;the&nbsp;Exchange Management Console.</li><li>Expand&nbsp;<em>Recipient Configuration</em>&nbsp;node.</li><li>Right click on&nbsp;<em>Mailbox</em>&nbsp;node.</li><li>Click&nbsp;<em>New Mailbox</em>.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>Next</em>.</li><li>Enter "MigrationWiz" as the first name.</li><li>Enter "MigrationWiz" as the user logon name and optionally select a user principal name (UPN) domain.</li><li>Enter a password and confirm the password.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>Browse</em>&nbsp;to select a Mailbox database.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>New</em>.</li><li>Click&nbsp;<em>Finish</em>.</li></ol><p>To grant the account access, perform the following from your Exchange Server 2007 machine:</p><ol><li>Open the Exchange Management Shell.</li><li>Enter the following command:</li></ol>
-                    <code class="code-block">Get-Mailbox -ResultSize Unlimited&nbsp;| Add-MailboxPermission -AccessRights FullAccess -User MigrationWiz</code><aside>Note that the command above needs to be applied each time a new mailbox is created as permissions are set directly on the mailbox. The administrative account will not have access until the permissions are applied.</aside>
-                    <p>You may optionally&nbsp;<a title="download and run our PowerShell script which will perform the steps listed above automatically" href="http://www.bittitan.com/kb/KB004428">download and run our PowerShell script which will perform the steps listed above automatically</a>.​​</p><p>&nbsp;</p>
-                    <p></p>
-                    <h2>Exchange 2010:</h2>
-                    <aside>Note: If your hosted Exchange provider does not provide administrative credentials or rather the admin account does not have sufficient permissions to login to user mailboxes,&nbsp;<a href="http://www.bittitan.com/kb/KB004363">click here</a>.</aside>
-                    <p>&nbsp;To create an account, perform the following from your Exchange Server 2010 machine:</p><ol><li>Open the Exchange Management Console.</li><li>Expand
-                        <em>Recipient Configuration</em>&nbsp;node.</li><li>Right click on&nbsp;<em>Mailbox</em>&nbsp;node.</li><li>Click&nbsp;<em>New Mailbox</em>.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>Next</em>.</li><li>Enter "MigrationWiz" as the first name.</li><li>Enter "MigrationWiz" as the user logon name and optionally select a user principal name (UPN) domain.</li><li>Enter a password and confirm the password.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>Browse</em>&nbsp;to select a Mailbox database.</li><li>Click&nbsp;<em>Next</em>.</li><li>Click&nbsp;<em>New</em>.</li><li>Click&nbsp;<em>Finish</em>.</li></ol><p>To grant the account access, perform the following from your Exchange Server 2010 machine:</p><ol><li>Open the Exchange Management Shell.</li><li>Enter the following command:</li></ol>
-                    <code class="code-block">Get-Mailbox -ResultSize Unlimited | Add-MailboxPermission -AccessRights FullAccess -User MigrationWiz</code><aside>Note that the command above needs to be applied each time a new mailbox is created as permissions are set directly on the mailbox. The administrative account will not have access until the permissions are applied.</aside>
-                    <p>You may optionally&nbsp;<a title="download and run our PowerShell script which will perform the steps listed above automatically" href="http://www.bittitan.com/kb/KB004428">download and run our PowerShell script which will perform the steps listed above automatically</a>.​​</p>
-                    <p></p><br/>
-                    <h2>Exchange 2013:</h2>
-                    <aside class="“aside-block”">NOTE: If your hosted Exchange provider does not provide administrative credentials or rather the admin account does not have sufficient permissions to login to user mailboxes,&nbsp;<a href="http://www.bittitan.com/kb/KB004363">click here</a>.</aside>
-                    <p>First, you must create an account and attach a mailbox for it in your Exchange 2013 Server.</p><p>To grant the account access, perform the following from your Exchange Server 2013 machine:</p><ol><li>Open the Exchange Management Shell.</li><li>Enter the following command:</li></ol>
-                    <code class="code-block">Get-Mailbox -ResultSize Unlimited | Add-MailboxPermission -AccessRights FullAccess -User MigrationWiz</code><aside>Note that the command above needs to be applied each time a new mailbox is created as permissions are set directly on the mailbox. The administrative account will not have access until the permissions are applied.</aside>
-                    <p>You may optionally&nbsp;<a title="download and run our PowerShell script which will perform the steps listed above automatically" href="http://www.bittitan.com/kb/KB004428">download and run our PowerShell script which will perform the steps listed above automatically</a>.​</p>
-                    <p></p><br/>
-                    <h2>Office 365:</h2><p>Having administrative access to the&nbsp;Microsoft Office 365 control panel to manage users does not mean the same account has permissions to access all mailboxes for migration. In order to have administrative permissions to migrate mailbox data, you need to grant the account permissions on each mailbox.</p><p>To manually grant administrative access for migration, execute the following remote PowerShell command:</p>
-                    <pre><code class="code-block">$cred = Get-Credential
-$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $cred -Authentication Basic -AllowRedirection
-Import-PSSession $session
-Get-Mailbox -ResultSize Unlimited | Add-MailboxPermission -AccessRights FullAccess -Automapping $false -User MigrationWiz
-Remove-PSSession $session</code></pre>
-                    <p>To automatically create an administrative account and grant administrative access for the migration,&nbsp;<a title="Download our script to provision an administrative account for migration on Microsoft Office 365." href="http://www.bittitan.com/kb/KB004428">download our script to provision an administrative account for migration on Microsoft Office 365.</a></p>
-                    <aside>Note: this article refers to the use of&nbsp;<strong>delegation</strong>&nbsp;to login to individual user mailboxes using an Office 365 administrator account. You may also want to use&nbsp;<a href="http://www.bittitan.com/kb/KB004726" target="_blank">impersonation&nbsp;</a>for large scale migrations.</aside><aside class="“aside-block”">Note that the command above needs to be applied each time a new mailbox is created as permissions are set directly on the mailbox. The administrative account will not have access until the permissions are applied.​</aside>
-                    <p></p><br/>
-                    <h2>Live@Edu:</h2><p>Having administrative access to the Live@Edu control panel to manage users does not mean the same account has permissions to access all mailboxes for migration. In order to have administrative permissions to migrate mailbox data, you need to grant the account permissions on each mailbox.</p><p>To manually grant administrative access for migration, execute the following remote PowerShell command:</p>
-                    <pre><code>$cred = Get-Credential
-$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $cred -Authentication Basic -AllowRedirection
-Import-PSSession $session
-Get-Mailbox -ResultSize Unlimited | Add-MailboxPermission -AccessRights FullAccess -Automapping $false -User MigrationWiz
-Remove-PSSession $session​​​</code></pre>
-                    <p>To automatically create an administrative account and grant administrative access for the migration,&nbsp;<a title="Download our script to provision an administrative account for migration on Microsoft Live@Edu." href="http://www.bittitan.com/kb/KB004428">download our script to provision an administrative account for migration on Microsoft Live@Edu.</a></p>
-                    <aside>​Note that the command above needs to be applied each time a new mailbox is created as permissions are set directly on the mailbox. The administrative account will not have access until the permissions are applied.​​</aside>
-                    <p></p><br/>
-                    <h2>Zimbra:</h2><p>Your Zimbra installation comes with an administrator account which is "admin@domain.com.</p><p>If you need to create an extra one or to turn an existing account into an administrator, your can follow the instructions here:</p><ul><li>
-                        <a href="https://wiki.zimbra.com/wiki/How_To_Create_an_Admin_Account">https://wiki.zimbra.com/wiki/How_To_Create_an_Admin_Account</a><br></li></ul></div>
                 </div>
 
 
 
+
+
+
+
+
+
+
+
+
+            </div>
             </div>
         </div>
     </div>
@@ -156,23 +64,11 @@ Remove-PSSession $session​​​</code></pre>
 
     <footer class="footer">
         <br/><br/>
-        <p>© 2015 BitTitan, Inc. All Rights Reserved.</p>
+        <p class="text-center">© 2015 BitTitan, Inc. All Rights Reserved.</p>
     </footer>
 
 </div> <!-- /container -->
 
 <script src="https://www.bittitan.com/internal-bootstrap/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-        var elements = document.querySelectorAll('.editable'),
-                editor = new MediumEditor(elements);
-
-        $(function () {
-            $('.editable').mediumInsert({
-                editor: editor
-            });
-        });
-    });
-</script>
 </body>
 </html>

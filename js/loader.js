@@ -63,6 +63,7 @@
     // CloudU
     loadScript("js/auth.js");
     loadScript("js/account.js");
+    loadScript("js/includes.js");
 
     // Run App
     loadScript("js/app.js");
