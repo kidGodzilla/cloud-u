@@ -28,11 +28,12 @@
     loadStylesheet("vendor/vex-theme-default.css");
     loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger.css");
     loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.0/css/messenger-theme-air.css");
-    // loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/yeti/bootstrap.min.css");
+    loadStylesheet("http://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/yeti/bootstrap.min.css");
 
     loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css");
 
-    loadStylesheet("bootstrap.min.css");
+    // loadStylesheet("bootstrap.min.css");
+    loadStylesheet("style.css");
     loadStylesheet("vendor/medium-editor.min.css");
     loadStylesheet("vendor/medium-editor.bootstrap.min.css");
     loadStylesheet("vendor/medium-editor-insert-plugin.min.css");
